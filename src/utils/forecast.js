@@ -24,7 +24,9 @@ const forecast = (latitude, longitude, callback) => {
         //wind: body.currently.windSpeed
         summary: body.daily.data[0].summary,
         temperature: body.currently.temperature,
-        precipProbability: body.currently.precipProbability
+        precipProbability: body.currently.precipProbability,
+        humidity: body.currently.humidity,
+        uvIndex: body.currently.uvIndex
       });
     }
   });
